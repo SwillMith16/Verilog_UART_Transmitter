@@ -1,0 +1,105 @@
+$comment
+	File created using the following command:
+		vcd file tx_3to4_bus_expansion.msim.vcd -direction
+$end
+$date
+	Fri Nov 24 20:02:18 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module tx_3to4_bus_expansion_vlg_vec_tst $end
+$var reg 3 ! data_in [2:0] $end
+$var wire 1 " data_out [3] $end
+$var wire 1 # data_out [2] $end
+$var wire 1 $ data_out [1] $end
+$var wire 1 % data_out [0] $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - data_in~combout [2] $end
+$var wire 1 . data_in~combout [1] $end
+$var wire 1 / data_in~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 !
+1%
+0$
+0#
+0"
+x&
+0'
+1(
+x)
+1*
+1+
+1,
+1/
+0.
+0-
+$end
+#50000
+b11 !
+b10 !
+0/
+1.
+0&
+0%
+1$
+#100000
+b11 !
+1/
+1&
+1%
+#150000
+b111 !
+b101 !
+b100 !
+0/
+0.
+1-
+0&
+0%
+0$
+1#
+#200000
+b101 !
+1/
+1&
+1%
+#250000
+b111 !
+b110 !
+0/
+1.
+0&
+0%
+1$
+#300000
+b111 !
+1/
+1&
+1%
+#350000
+b11 !
+b1 !
+b0 !
+0/
+0.
+0-
+0&
+0%
+0$
+0#
+#400000

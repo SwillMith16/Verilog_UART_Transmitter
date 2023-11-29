@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, ../tx_bit_counter/tx_controller.v
+source_file = 1, module_simulation.vwf
+source_file = 1, C:/Users/wswil/Documents/02_Uni/Year 4/Module Notes/ELEC373 - Dig Syst Design/Assignment 1/Verilog/tx_controller/controller_simulation.vwf
+source_file = 1, C:/Users/wswil/Documents/02_Uni/Year 4/Module Notes/ELEC373 - Dig Syst Design/Assignment 1/Verilog/tx_controller/db/tx_controller.cbx.xml
+source_file = 1, C:/Users/wswil/Documents/02_Uni/Year 4/Module Notes/ELEC373 - Dig Syst Design/Assignment 1/Verilog/tx_controller/tx_controller.v
+design_name = tx_controller
+instance = comp, \clk~I , clk, tx_controller, 1
+instance = comp, \count_done~I , count_done, tx_controller, 1
+instance = comp, \send~I , send, tx_controller, 1
+instance = comp, \n_state~0 , n_state~0, tx_controller, 1
+instance = comp, \reset_n~I , reset_n, tx_controller, 1
+instance = comp, \baud~I , baud, tx_controller, 1
+instance = comp, \shift_pulse~0 , shift_pulse~0, tx_controller, 1
+instance = comp, \load_pulse~0 , load_pulse~0, tx_controller, 1
+instance = comp, \shift~I , shift, tx_controller, 1
+instance = comp, \load~I , load, tx_controller, 1

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wswil\Documents\02-Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_baud_counter\simulation\qsim
+vtx_baud_counter
+Z1 !s100 eXiBVbBNngUIb@Fj4EkGa0
+Z2 IWm7zLBI3GkGg;3UVK`Vc00
+Z3 VWE9GKNLMVSDok>O=CFaX63
+Z4 dC:\Users\wswil\Documents\02_Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_baud_counter\simulation\qsim
+Z5 w1700856568
+Z6 8tx_baud_counter.vo
+Z7 Ftx_baud_counter.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|tx_baud_counter.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1700856570.690000
+Z12 !s107 tx_baud_counter.vo|
+!s101 -O0
+vtx_baud_counter_vlg_check_tst
+!i10b 1
+Z13 !s100 7=ziY39^JzIfXHV61B4CN1
+Z14 I5@dW4jzQ?eibN;MBS=1PD1
+Z15 VVY@53[R?nNK1X7B@9Dn3N0
+R4
+Z16 w1700856566
+Z17 8tx_baud_counter.vt
+Z18 Ftx_baud_counter.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1700856570.836000
+Z20 !s107 tx_baud_counter.vt|
+Z21 !s90 -work|work|tx_baud_counter.vt|
+!s101 -O0
+R10
+vtx_baud_counter_vlg_sample_tst
+!i10b 1
+Z22 !s100 TgeOGdY4MG7S2344NDe450
+Z23 IlPc6DK;Y6oK<LLAQDQdLc0
+Z24 V63mUATiR>mTLGRS:dBCRg0
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vtx_baud_counter_vlg_vec_tst
+!i10b 1
+!s100 UBL[_?@U[jHOl3]dz0UnY0
+IGhEO2iHiOY[SBOdYokn2J0
+Z25 VdYjo_U8Wz[Jg2Dg?n0SVg1
+R4
+R16
+R17
+R18
+Z26 L0 154
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

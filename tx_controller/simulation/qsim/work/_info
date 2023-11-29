@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wswil\Documents\02-Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_controller\simulation\qsim
+vtx_controller
+Z1 !s100 X0Yh5^1oAC27mFQ94RnPW1
+Z2 IL4E?Yn?iP=oJ9HCL`A1lT3
+Z3 VM:P]<0?2QU<BG93@E_8=72
+Z4 dC:\Users\wswil\Documents\02_Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_controller\simulation\qsim
+Z5 w1700772430
+Z6 8tx_controller.vo
+Z7 Ftx_controller.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|tx_controller.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1700772432.044000
+Z12 !s107 tx_controller.vo|
+!s101 -O0
+vtx_controller_vlg_check_tst
+!i10b 1
+Z13 !s100 L[G^8iX9O5M;k`mde=g8=0
+Z14 I[4TSK=]z1IEUMU]EW^hGK0
+Z15 Vz_46mcY[SU4CLoP7lECj=1
+R4
+Z16 w1700772427
+Z17 8tx_controller.vt
+Z18 Ftx_controller.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z19 !s108 1700772432.124000
+Z20 !s107 tx_controller.vt|
+Z21 !s90 -work|work|tx_controller.vt|
+!s101 -O0
+R10
+vtx_controller_vlg_sample_tst
+!i10b 1
+Z22 !s100 d6?E]20;lV:fZG^KiFPEF1
+Z23 In9m7?dfHfZoSTaAeF4TLQ0
+Z24 V07oWdzl4njZFdXJlPDBM52
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vtx_controller_vlg_vec_tst
+!i10b 1
+!s100 eK[>E@XYd:Jf7_]^MPk6Q3
+IE?z_?JJKzNl2>Mddeka`80
+Z25 VzmM=a35h<=4DGC9b^]X_>2
+R4
+R16
+R17
+R18
+Z26 L0 187
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

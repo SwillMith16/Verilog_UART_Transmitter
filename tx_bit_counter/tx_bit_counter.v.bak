@@ -1,0 +1,32 @@
+module tx_bit_counter(input clk, input increment, input reset_n, output reg done);
+
+  reg [3:0] count;
+
+  always @(posedge clk, negedge reset_n)
+  begin
+    if (!reset_n)
+	 begin
+		count <= 4'b0000;
+      done <= 0;
+    end
+    else
+	 begin
+      if (increment)
+		begin
+			if (count == 4'b1001)
+			begin
+				// Reset counter and set 'done' when it reaches 9
+				count <= 4'b0000;
+				done <= 1;
+			end
+			else
+			begin
+				// Otherwise, increment the counter
+				count <= count + 1;
+				done <= 0;
+			end
+      end
+    end
+  end
+
+endmodule

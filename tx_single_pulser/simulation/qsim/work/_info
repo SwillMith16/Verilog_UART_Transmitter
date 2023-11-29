@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wswil\Documents\02-Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_single_pulser\simulation\qsim
+vtx_single_pulser
+Z1 !s100 TQRM=Cf6GICXBQ;o7=F:K3
+Z2 IE_=OAXahW[F;ahk?_QGYV0
+Z3 VA2lNFE6Pj71g<@o;nk=7<2
+Z4 dC:\Users\wswil\Documents\02_Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_single_pulser\simulation\qsim
+Z5 w1700859033
+Z6 8tx_single_pulser.vo
+Z7 Ftx_single_pulser.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|tx_single_pulser.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1700859034.952000
+Z12 !s107 tx_single_pulser.vo|
+!s101 -O0
+vtx_single_pulser_vlg_check_tst
+!i10b 1
+Z13 !s100 ^0N4gn;KMMC6WzXjfGb7O1
+Z14 I>?8`P;<QgUY@XdV@aX@S>1
+Z15 Vaf^`DGeM;mTbaa2gg`;151
+R4
+Z16 w1700859031
+Z17 8tx_single_pulser.vt
+Z18 Ftx_single_pulser.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1700859035.045000
+Z20 !s107 tx_single_pulser.vt|
+Z21 !s90 -work|work|tx_single_pulser.vt|
+!s101 -O0
+R10
+vtx_single_pulser_vlg_sample_tst
+!i10b 1
+Z22 !s100 06OX5XJkPZ;_W_D:`W<AY2
+Z23 IQj_51VdCY:m_>i<8c:fbM1
+Z24 V=9OL8=HDKD?Oz<ghg<k>03
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vtx_single_pulser_vlg_vec_tst
+!i10b 1
+Z25 !s100 U2AVi7F7JLg9]4CMaCfA;1
+Z26 ISiGVEJRQ;DbkZB5:FE_z>2
+Z27 Vh05hoT[FAnZ7WLkZS41`A1
+R4
+R16
+R17
+R18
+Z28 L0 156
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wswil\Documents\02-Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_3to4_bus_expansion\simulation\qsim
+vtx_3to4_bus_expansion
+Z1 !s100 F9^eC_<GoPOD7AAci8zGh0
+Z2 I4lD`6W7=z4Yh:EL=[?0]`3
+Z3 V<Zl`=WlA]L8Ol:`baW`Ia1
+Z4 dC:\Users\wswil\Documents\02_Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_3to4_bus_expansion\simulation\qsim
+Z5 w1700856135
+Z6 8tx_3to4_bus_expansion.vo
+Z7 Ftx_3to4_bus_expansion.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|tx_3to4_bus_expansion.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1700856137.076000
+Z12 !s107 tx_3to4_bus_expansion.vo|
+!s101 -O0
+vtx_3to4_bus_expansion_vlg_check_tst
+!i10b 1
+!s100 jd]PRc?`SXma>T9^`L[660
+Iz^HmLjaHccADl`ljdJ?;c3
+Z13 VVLV8nJTZ88VK8gDf<VV=X1
+R4
+Z14 w1700856133
+Z15 8tx_3to4_bus_expansion.vt
+Z16 Ftx_3to4_bus_expansion.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z17 !s108 1700856137.216000
+Z18 !s107 tx_3to4_bus_expansion.vt|
+Z19 !s90 -work|work|tx_3to4_bus_expansion.vt|
+!s101 -O0
+R10
+vtx_3to4_bus_expansion_vlg_sample_tst
+!i10b 1
+Z20 !s100 UR;<E2mToiNDMS>mb<IJD3
+Z21 I=I4ANQiVaVH?]V[9CcnZ62
+Z22 Vkh1D<ARW=of[_;2Zld;Y>1
+R4
+R14
+R15
+R16
+L0 29
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+vtx_3to4_bus_expansion_vlg_vec_tst
+!i10b 1
+!s100 O?W2DLh3Ciimb`<_^IbLB0
+I`XAIGU;gZ<z6gXmP_450@1
+Z23 V7lOnHTZADN07=<BdOD6[k2
+R4
+R14
+R15
+R16
+Z24 L0 205
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10

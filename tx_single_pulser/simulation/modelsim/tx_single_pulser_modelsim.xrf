@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wswil/Documents/02_Uni/Year 4/Module Notes/ELEC373 - Dig Syst Design/Assignment 1/Verilog/tx_single_pulser/tx_single_pulser.v
+source_file = 1, tx_single_pulser_block.bdf
+source_file = 1, module_simulation.vwf
+source_file = 1, C:/Users/wswil/Documents/02_Uni/Year 4/Module Notes/ELEC373 - Dig Syst Design/Assignment 1/Verilog/tx_single_pulser/Waveform.vwf
+source_file = 1, C:/Users/wswil/Documents/02_Uni/Year 4/Module Notes/ELEC373 - Dig Syst Design/Assignment 1/Verilog/tx_single_pulser/single_pulser_simulation.vwf
+source_file = 1, C:/Users/wswil/Documents/02_Uni/Year 4/Module Notes/ELEC373 - Dig Syst Design/Assignment 1/Verilog/tx_single_pulser/db/tx_single_pulser.cbx.xml
+design_name = tx_single_pulser
+instance = comp, \clk~I , clk, tx_single_pulser, 1
+instance = comp, \clk~clkctrl , clk~clkctrl, tx_single_pulser, 1
+instance = comp, \send_n~I , send_n, tx_single_pulser, 1
+instance = comp, \p_state~0 , p_state~0, tx_single_pulser, 1
+instance = comp, \reset_n~I , reset_n, tx_single_pulser, 1
+instance = comp, \reset_n~clkctrl , reset_n~clkctrl, tx_single_pulser, 1
+instance = comp, \n_pulse~0 , n_pulse~0, tx_single_pulser, 1
+instance = comp, \pulse_out~I , pulse_out, tx_single_pulser, 1

@@ -1,0 +1,11 @@
+module tx_controller(input clock, input reset_n, input send, input baud, input count_done, output reg clear, output reg shift, output reg load);
+	
+	
+	always @ (posedge clk)
+	begin
+		
+		
+		
+	end
+	
+endmodule

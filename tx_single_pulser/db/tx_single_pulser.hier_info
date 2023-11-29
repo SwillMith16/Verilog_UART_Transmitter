@@ -1,0 +1,10 @@
+|tx_single_pulser
+clk => p_state.CLK
+clk => p_pulse.CLK
+reset_n => p_state.ACLR
+reset_n => p_pulse.ACLR
+send_n => n_pulse.DATAA
+send_n => p_state.DATAIN
+pulse_out <= p_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+

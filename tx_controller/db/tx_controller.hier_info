@@ -1,0 +1,11 @@
+|tx_controller
+clk => p_state.CLK
+reset_n => p_state.ACLR
+send => n_state.OUTPUTSELECT
+send => load_pulse.DATAA
+baud => shift_pulse.DATAB
+count_done => n_state.OUTPUTSELECT
+shift <= shift_pulse.DB_MAX_OUTPUT_PORT_TYPE
+load <= load_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+

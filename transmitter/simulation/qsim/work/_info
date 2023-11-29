@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wswil\Documents\02-Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\transmitter\simulation\qsim
+vtransmitter
+Z1 IdzSS<8XXBVIE=gn:Ogo7N2
+Z2 V<XhKmE6X6TE7Ia0_SFgG42
+Z3 dC:\Users\wswil\Documents\02_Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\transmitter\simulation\qsim
+Z4 w1700955224
+Z5 8transmitter.vo
+Z6 Ftransmitter.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|transmitter.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 9@>eFi7ZgDId>iP?cHi<=2
+!s85 0
+Z11 !s108 1700955225.806000
+Z12 !s107 transmitter.vo|
+!s101 -O0
+vtransmitter_vlg_check_tst
+!i10b 1
+!s100 zMa^F>U1=TUOA=R0=_:KY0
+IzG_]PAcnCCcf:U=Q:g8mh3
+Vgb9fW3>TjLF8nlzdl^LnU3
+R3
+Z13 w1700955222
+Z14 8transmitter.vt
+Z15 Ftransmitter.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z16 !s108 1700955225.931000
+Z17 !s107 transmitter.vt|
+Z18 !s90 -work|work|transmitter.vt|
+!s101 -O0
+R9
+vtransmitter_vlg_sample_tst
+!i10b 1
+Z19 !s100 PiJmi:[;iPH@aNkODC>^S0
+Z20 I?82T@809mR<>mIXWzB`cf2
+Z21 V:4@lRmmTQ9Z_h:kRIEVO[0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vtransmitter_vlg_vec_tst
+!i10b 1
+!s100 ?2WmDY<YGhBa5AHR5_K>Q3
+IQhH^POO^6SjCkj?c6X1eI0
+Z22 VH3=Z81H9FQ50ZgG;f3V<22
+R3
+R13
+R14
+R15
+L0 230
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9

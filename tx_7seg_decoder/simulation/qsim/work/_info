@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wswil\Documents\02-Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_7seg_decoder\simulation\qsim
+vtx_7seg_decoder
+Z1 IL_^iV3VBJGD2F7N<R_9;n1
+Z2 VDl8Z2>G6>_cF;RR478iL72
+Z3 dC:\Users\wswil\Documents\02_Uni\Year 4\Module Notes\ELEC373 - Dig Syst Design\Assignment 1\Verilog\tx_7seg_decoder\simulation\qsim
+Z4 w1700856328
+Z5 8tx_7seg_decoder.vo
+Z6 Ftx_7seg_decoder.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|tx_7seg_decoder.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 MfoMk1hQdI5?<naej:J3K0
+!s85 0
+Z11 !s108 1700856330.154000
+Z12 !s107 tx_7seg_decoder.vo|
+!s101 -O0
+vtx_7seg_decoder_vlg_check_tst
+!i10b 1
+!s100 YIe^eLL]VBiS]WdnIbFWe2
+I;k<6P8f9FIie^SW9f<le>0
+Z13 Vi3S<Y[GU_VE_z6Siz<ITV1
+R3
+Z14 w1700856325
+Z15 8tx_7seg_decoder.vt
+Z16 Ftx_7seg_decoder.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z17 !s108 1700856330.293000
+Z18 !s107 tx_7seg_decoder.vt|
+Z19 !s90 -work|work|tx_7seg_decoder.vt|
+!s101 -O0
+R9
+vtx_7seg_decoder_vlg_sample_tst
+!i10b 1
+!s100 KDWck2@1Agn@K1QYEmO6C2
+Ihf`gik31HLC5SS20DRa;S0
+Vd6iOdKha@ZQgh=IkPOfCN2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+vtx_7seg_decoder_vlg_vec_tst
+!i10b 1
+!s100 Nf^LYm?1Y=6zf6gGl2`701
+If@C@bPK<KC<bD`WS22jil2
+Z20 VI150l93=m7:QI68kOI[UK1
+R3
+R14
+R15
+R16
+L0 259
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9

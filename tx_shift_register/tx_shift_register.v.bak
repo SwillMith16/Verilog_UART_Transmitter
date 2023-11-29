@@ -1,0 +1,36 @@
+module tx_shift_register(input clk, input reset_n, input shift, input load, input [9:0] data_in, output reg txData);
+
+	reg [9:0] data;
+	
+	always @ (posedge clk)
+	begin
+		
+		if (!reset_n) // when reset is triggered (active low)
+			begin
+			data = 0;
+			end
+		
+		txData = data[0]; // output the LSB
+		
+		if (load) // if load is true
+		begin
+			data = data_in;
+		end
+		else // is load is false
+		begin
+			if (shift) // if shift is true
+			begin
+				data = data >> 1;
+				data[9] = 0;
+			end
+			else // if shift is false
+			begin
+				data = data;
+			end
+		end
+		
+		
+	end
+	
+	
+endmodule

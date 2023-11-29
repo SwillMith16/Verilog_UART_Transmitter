@@ -1,0 +1,15 @@
+
+module metastable_dff(
+	input async_in,
+	input clk,
+	output reg sync_out
+);
+
+initial
+	sync_out = 1;
+
+always @ (posedge clk)
+	sync_out <= data_in;
+
+endmodule
+

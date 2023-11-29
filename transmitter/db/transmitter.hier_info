@@ -1,0 +1,267 @@
+|transmitter
+load <= tx_controller:inst4.load
+CLOCK_50 => tx_controller:inst4.clk
+CLOCK_50 => tx_single_pulser:inst6.clk
+CLOCK_50 => metastable_dff:inst15.clk
+CLOCK_50 => metastable_dff:inst16.clk
+CLOCK_50 => tx_baud_counter:inst2.clk
+CLOCK_50 => tx_bit_counter:inst3.clk
+CLOCK_50 => tx_shift_register:inst5.clk
+reset_n => tx_controller:inst4.reset_n
+reset_n => tx_single_pulser:inst6.reset_n
+reset_n => tx_baud_counter:inst2.reset_n
+reset_n => tx_bit_counter:inst3.reset_n
+reset_n => tx_shift_register:inst5.reset_n
+reset_n => LEDG[1].DATAIN
+send_n => metastable_dff:inst15.async_in
+shift <= tx_controller:inst4.shift
+UART_TXD <= tx_shift_register:inst5.txData
+data_in[0] => tx_parity_checker:inst7.data_in[0]
+data_in[0] => tx_7seg_decoder:inst1.data_in[0]
+data_in[1] => tx_parity_checker:inst7.data_in[1]
+data_in[1] => tx_7seg_decoder:inst1.data_in[1]
+data_in[2] => tx_parity_checker:inst7.data_in[2]
+data_in[2] => tx_7seg_decoder:inst1.data_in[2]
+data_in[3] => tx_parity_checker:inst7.data_in[3]
+data_in[3] => tx_7seg_decoder:inst1.data_in[3]
+data_in[4] => tx_parity_checker:inst7.data_in[4]
+data_in[4] => tx_3to4_bus_expansion:inst8.data_in[0]
+data_in[5] => tx_parity_checker:inst7.data_in[5]
+data_in[5] => tx_3to4_bus_expansion:inst8.data_in[1]
+data_in[6] => tx_parity_checker:inst7.data_in[6]
+data_in[6] => tx_3to4_bus_expansion:inst8.data_in[2]
+baud_out <= tx_baud_counter:inst2.baud_out
+send_pulse <= tx_single_pulser:inst6.pulse_out
+HEX2[0] <= tx_7seg_decoder:inst1.data_out[0]
+HEX2[1] <= tx_7seg_decoder:inst1.data_out[1]
+HEX2[2] <= tx_7seg_decoder:inst1.data_out[2]
+HEX2[3] <= tx_7seg_decoder:inst1.data_out[3]
+HEX2[4] <= tx_7seg_decoder:inst1.data_out[4]
+HEX2[5] <= tx_7seg_decoder:inst1.data_out[5]
+HEX2[6] <= tx_7seg_decoder:inst1.data_out[6]
+HEX3[0] <= tx_7seg_decoder:inst.data_out[0]
+HEX3[1] <= tx_7seg_decoder:inst.data_out[1]
+HEX3[2] <= tx_7seg_decoder:inst.data_out[2]
+HEX3[3] <= tx_7seg_decoder:inst.data_out[3]
+HEX3[4] <= tx_7seg_decoder:inst.data_out[4]
+HEX3[5] <= tx_7seg_decoder:inst.data_out[5]
+HEX3[6] <= tx_7seg_decoder:inst.data_out[6]
+LEDG[0] <= metastable_dff:inst16.sync_out
+LEDG[1] <= reset_n.DB_MAX_OUTPUT_PORT_TYPE
+parity_data[0] <= tx_parity_checker:inst7.data_out[0]
+parity_data[1] <= tx_parity_checker:inst7.data_out[1]
+parity_data[2] <= tx_parity_checker:inst7.data_out[2]
+parity_data[3] <= tx_parity_checker:inst7.data_out[3]
+parity_data[4] <= tx_parity_checker:inst7.data_out[4]
+parity_data[5] <= tx_parity_checker:inst7.data_out[5]
+parity_data[6] <= tx_parity_checker:inst7.data_out[6]
+parity_data[7] <= tx_parity_checker:inst7.data_out[7]
+parity_data[8] <= tx_parity_checker:inst7.data_out[8]
+parity_data[9] <= tx_parity_checker:inst7.data_out[9]
+parity_data[10] <= tx_parity_checker:inst7.data_out[10]
+
+
+|transmitter|tx_controller:inst4
+clk => p_state.CLK
+reset_n => p_state.ACLR
+send => n_state.OUTPUTSELECT
+send => load_pulse.DATAA
+baud => shift_pulse.DATAB
+count_done => n_state.OUTPUTSELECT
+shift <= shift_pulse.DB_MAX_OUTPUT_PORT_TYPE
+load <= load_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|tx_single_pulser:inst6
+clk => p_state.CLK
+clk => p_pulse.CLK
+reset_n => p_state.ACLR
+reset_n => p_pulse.ACLR
+send_n => n_pulse.DATAA
+send_n => p_state.DATAIN
+pulse_out <= p_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|metastable_dff:inst16
+async_in => sync_out~reg0.DATAIN
+clk => sync_out~reg0.CLK
+sync_out <= sync_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|metastable_dff:inst15
+async_in => sync_out~reg0.DATAIN
+clk => sync_out~reg0.CLK
+sync_out <= sync_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|tx_baud_counter:inst2
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+reset_n => count[0].ACLR
+reset_n => count[1].ACLR
+reset_n => count[2].ACLR
+reset_n => count[3].ACLR
+reset_n => count[4].ACLR
+reset_n => count[5].ACLR
+reset_n => count[6].ACLR
+reset_n => count[7].ACLR
+reset_n => count[8].ACLR
+reset_n => count[9].ACLR
+reset_n => count[10].ACLR
+reset_n => count[11].ACLR
+reset_n => count[12].ACLR
+baud_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|tx_bit_counter:inst3
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+reset_n => count[0].ACLR
+reset_n => count[1].ACLR
+reset_n => count[2].ACLR
+reset_n => count[3].ACLR
+increment => count.OUTPUTSELECT
+increment => count.OUTPUTSELECT
+increment => count.OUTPUTSELECT
+increment => count.OUTPUTSELECT
+done <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|tx_shift_register:inst5
+clk => p_data[0].CLK
+clk => p_data[1].CLK
+clk => p_data[2].CLK
+clk => p_data[3].CLK
+clk => p_data[4].CLK
+clk => p_data[5].CLK
+clk => p_data[6].CLK
+clk => p_data[7].CLK
+clk => p_data[8].CLK
+clk => p_data[9].CLK
+clk => p_data[10].CLK
+reset_n => p_data[0].PRESET
+reset_n => p_data[1].ACLR
+reset_n => p_data[2].ACLR
+reset_n => p_data[3].ACLR
+reset_n => p_data[4].ACLR
+reset_n => p_data[5].ACLR
+reset_n => p_data[6].ACLR
+reset_n => p_data[7].ACLR
+reset_n => p_data[8].ACLR
+reset_n => p_data[9].ACLR
+reset_n => p_data[10].ACLR
+shift => n_data[10].OUTPUTSELECT
+shift => n_data[9].OUTPUTSELECT
+shift => n_data[8].OUTPUTSELECT
+shift => n_data[7].OUTPUTSELECT
+shift => n_data[6].OUTPUTSELECT
+shift => n_data[5].OUTPUTSELECT
+shift => n_data[4].OUTPUTSELECT
+shift => n_data[3].OUTPUTSELECT
+shift => n_data[2].OUTPUTSELECT
+shift => n_data[1].OUTPUTSELECT
+shift => n_data[0].OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+load => n_data.OUTPUTSELECT
+data_in[0] => n_data.DATAB
+data_in[1] => n_data.DATAB
+data_in[2] => n_data.DATAB
+data_in[3] => n_data.DATAB
+data_in[4] => n_data.DATAB
+data_in[5] => n_data.DATAB
+data_in[6] => n_data.DATAB
+data_in[7] => n_data.DATAB
+data_in[8] => n_data.DATAB
+data_in[9] => n_data.DATAB
+data_in[10] => n_data.DATAB
+txData <= p_data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|tx_parity_checker:inst7
+data_in[0] => WideXor0.IN0
+data_in[0] => data_out[2].DATAIN
+data_in[1] => WideXor0.IN1
+data_in[1] => data_out[3].DATAIN
+data_in[2] => WideXor0.IN2
+data_in[2] => data_out[4].DATAIN
+data_in[3] => WideXor0.IN3
+data_in[3] => data_out[5].DATAIN
+data_in[4] => WideXor0.IN4
+data_in[4] => data_out[6].DATAIN
+data_in[5] => WideXor0.IN5
+data_in[5] => data_out[7].DATAIN
+data_in[6] => WideXor0.IN6
+data_in[6] => data_out[8].DATAIN
+data_out[0] <= <VCC>
+data_out[1] <= <GND>
+data_out[2] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= WideXor0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[10] <= <VCC>
+
+
+|transmitter|tx_7seg_decoder:inst1
+data_in[0] => Decoder0.IN3
+data_in[1] => Decoder0.IN2
+data_in[2] => Decoder0.IN1
+data_in[3] => Decoder0.IN0
+data_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|tx_7seg_decoder:inst
+data_in[0] => Decoder0.IN3
+data_in[1] => Decoder0.IN2
+data_in[2] => Decoder0.IN1
+data_in[3] => Decoder0.IN0
+data_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|tx_3to4_bus_expansion:inst8
+data_in[0] => data_out[0].DATAIN
+data_in[1] => data_out[1].DATAIN
+data_in[2] => data_out[2].DATAIN
+data_out[0] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= <GND>
+
+
